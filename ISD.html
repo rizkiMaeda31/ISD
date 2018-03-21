@@ -3,7 +3,8 @@
 <title>Rewrite</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="library/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="Rewrite.ico" type="image/x-icon">
@@ -165,14 +166,14 @@ body, html {
 				<h3>KARAKTER</h3>
 			</header> -->
 			<div class="w3-container">
-				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off w3-image" src="karakter/kotarou icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(1)">
-				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/kotori icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(2)">
-				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/chihaya icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(3)">
-				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/akane icon.png" style="margin-right:0.1;width:7.5%;max-width:10%%" onclick="currentDiv(4)">
-				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/shizuku icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(5)">
-				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/lucia icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(6)">
-				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/yoshino icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(7)">
-				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/sakuya icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(8)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off w3-image" src="karakter/kotarou icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(1, 'chara')">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/kotori icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(2, 'chara')">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/chihaya icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(3, 'chara')">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/akane icon.png" style="margin-right:0.1;width:7.5%;max-width:10%%" onclick="currentDiv(4, 'chara')">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/shizuku icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(5, 'chara')">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/lucia icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(6, 'chara')">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/yoshino icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(7, 'chara')">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/sakuya icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(8, 'chara')">
 				<!-- <img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/nishikujou icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(9)">
 				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/esaka icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(10)">
 				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/midou icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(11)">
@@ -346,75 +347,224 @@ body, html {
   <div class="w3-container w3-teal">
 	<h3 class="w3-center">GAME</h3>
   </div>
-  <div class="w3-row-padding w3-margin-top">
-	<div class="w3-card-4 w3-margin">
-		<!-- <div class="w3-display-container w3-text-white"> -->
-		<div class="w3-hide-small w3-hide-medium">
-			<div class="w3-half"><img src="konsep/choice1.png" alt="konsep1" style="width:100%"></div>
-			<div class="w3-half"><img src="konsep/choice2.png" alt="konsep2" style="width:100%"></div>
-		</div>
-		<div class="w3-hide-large">
-			<img src="konsep/choice1.png" alt="konsep1" style="width:100%">
-			<img src="konsep/choice2.png" alt="konsep2" style="width:100%">
-		</div>
-		<!-- </div> -->
-		<div class="w3-container">
-			<h3><b>RUTE CERITA</b></h3>
-		</div>
-		<div class="w3-container">
-			<p>
-				Pemain bisa memilih arah cerita berdasarkan pilihan yang diberikan.
-				Beberapa pilihan juga akan mempengaruhi atau tidak mempengaruhi 「Ending」 cerita.
-				Ada juga pilihan yang membuat protagonis menjadi lebih kuat atau lemah didalam cerita yang ditandai dengan ikon 「Jam」 di pojok kiri bawah layar menu permainan.
-			</p>
-		</div>
-	</div>
-	<div class="w3-card-4 w3-margin">
-		<!-- <div class="w3-display-container w3-text-white"> -->
-		<div class="w3-hide-small w3-hide-medium">
-			<div class="w3-half"><img src="konsep/mappie1.png" alt="konsep3" style="width:100%"></div>
-			<div class="w3-half"><img src="konsep/mappie2.png" alt="konsep4" style="width:100%"></div>
-		</div>
-		<div class="w3-hide-large">
-			<img src="konsep/mappie1.png" alt="konsep3" style="width:100%">
-			<img src="konsep/mappie2.png" alt="konsep4" style="width:100%">
-		</div>
-		<!-- </div> -->
-		<div class="w3-container">
-			<h3><b>INTERAKSI LINGKUNGAN CERITA</b></h3>
-		</div>
-		<div class="w3-container">
-			<p>
-				Ketika protagonis melakukan pencarian maka pemain akan diminta untuk mencari petunjuk lewat fitur 「Mappie」.
-				Mappie digunakan untuk berinteraksi dengan karakter lain tanpa mempengaruhi cerita utama.
-				Di fitur Mappie juga terdapat karakter/event rahasia yang hanya bisa dibuka setelah memenuhi persyaratan khusus.
-			</p>
-		</div>
-	</div>
-	<div class="w3-card-4 w3-margin">
-		<!-- <div class="w3-display-container w3-text-white"> -->
-		<div class="w3-hide-small w3-hide-medium">
-			<div class="w3-third"><img src="konsep/friend.png" alt="konsep5" style="width:100%"></div>
-			<div class="w3-third"><img src="konsep/monster.png" alt="konsep7" style="width:100%"></div>
-			<div class="w3-third"><img src="konsep/quest.png" alt="konsep6" style="width:100%"></div>
-		</div>
-		<div class="w3-hide-large">
-			<img src="konsep/friend.png" alt="konsep5" style="width:100%">
-			<img src="konsep/monster.png" alt="konsep7" style="width:100%">
-			<img src="konsep/quest.png" alt="konsep6" style="width:100%">
-		</div>
-		<!-- </div> -->
-		<div class="w3-container">
-			<h3><b>MEMORY</b></h3>
-		</div>
-		<div class="w3-container">
-			<p>
-				Memory adalah menu untuk menyimpan informasi tentang teman, monster dan quest dengan menyelesaikan cerita utama atau memenuhi persyaratan tertentu.
-			</p>
-		</div>
-	</div>
-  </div>
-</div>
+    <div class="w3-bar w3-row-padding w3-margin w3-center">
+        <button class="w3-button w3-black" onclick="currentDiv(1,'skenario')">SKENARIO</button>
+        <button class="w3-button w3-teal" onclick="currentDiv(1,'gameplay')">GAMEPLAY</button>
+        <button class="w3-button w3-red" onclick="currentDiv(1,'minigame')">MINI GAME</button>
+    </div>
+    <div class="w3-show" id="skenario-display">
+        <div class="w3-content w3-display-container ">
+            <div class="w3-card-4 w3-margin skenario-slide w3-animate-opacity">
+                <div class="w3-hide-small w3-hide-medium">
+                    <div class="w3-half"><img src="konsep/choice1.png" alt="konsep1" style="width:100%"></div>
+                    <div class="w3-half"><img src="konsep/choice2.png" alt="konsep2" style="width:100%"></div>
+                </div>
+                <div class="w3-hide-large">
+                    <img src="konsep/choice1.png" alt="konsep1" style="width:100%">
+                    <img src="konsep/choice2.png" alt="konsep2" style="width:100%">
+                </div>
+                <div class="w3-container">
+                    <h3><b>RUTE CERITA</b></h3>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        Pemain bisa memilih arah cerita berdasarkan pilihan yang diberikan.
+                        Beberapa pilihan juga akan mempengaruhi atau tidak mempengaruhi 「Ending」 cerita.
+                        Ada juga pilihan yang membuat protagonis menjadi lebih kuat atau lemah didalam cerita yang ditandai dengan ikon 「Jam」 di pojok kiri bawah layar menu permainan.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-margin skenario-slide w3-animate-opacity">
+                <div class="w3-hide-small w3-hide-medium">
+                    <div class="w3-half"><img src="konsep/mappie1.png" alt="konsep3" style="width:100%"></div>
+                    <div class="w3-half"><img src="konsep/mappie2.png" alt="konsep4" style="width:100%"></div>
+                </div>
+                <div class="w3-hide-large">
+                    <img src="konsep/mappie1.png" alt="konsep3" style="width:100%">
+                    <img src="konsep/mappie2.png" alt="konsep4" style="width:100%">
+                </div>
+                <div class="w3-container">
+                    <h3><b>INTERAKSI LINGKUNGAN CERITA</b></h3>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        Ketika protagonis melakukan pencarian maka pemain akan diminta untuk mencari petunjuk lewat fitur 「Mappie」.
+                        Mappie digunakan untuk berinteraksi dengan karakter lain tanpa mempengaruhi cerita utama.
+                        Di fitur Mappie juga terdapat karakter/event rahasia yang hanya bisa dibuka setelah memenuhi persyaratan khusus.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-center">
+                <div class="w3-section">
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(-1,'skenario')">❮</button>
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(1, 'skenario')">❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-hide" id="gameplay-display">
+        <div class="w3-content w3-display-container">
+            <div class="w3-card-4 w3-margin gameplay-slide w3-animate-opacity">
+                <div class="w3-hide-small w3-hide-medium">
+                    <div class="w3-half"><img src="konsep/mappie1.png" alt="konsep3" style="width:100%"></div>
+                    <div class="w3-half"><img src="konsep/mappie2.png" alt="konsep4" style="width:100%"></div>
+                </div>
+                <div class="w3-hide-large">
+                    <img src="konsep/mappie1.png" alt="konsep3" style="width:100%">
+                    <img src="konsep/mappie2.png" alt="konsep4" style="width:100%">
+                </div>
+                <div class="w3-container">
+                    <h3><b>INTERAKSI LINGKUNGAN CERITA</b></h3>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        Ketika protagonis melakukan pencarian maka pemain akan diminta untuk mencari petunjuk lewat fitur 「Mappie」.
+                        Mappie digunakan untuk berinteraksi dengan karakter lain tanpa mempengaruhi cerita utama.
+                        Di fitur Mappie juga terdapat karakter/event rahasia yang hanya bisa dibuka setelah memenuhi persyaratan khusus.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-margin gameplay-slide w3-animate-opacity">
+                <div class="w3-hide-small w3-hide-medium">
+                    <div class="w3-half"><img src="konsep/choice1.png" alt="konsep1" style="width:100%"></div>
+                    <div class="w3-half"><img src="konsep/choice2.png" alt="konsep2" style="width:100%"></div>
+                </div>
+                <div class="w3-hide-large">
+                    <img src="konsep/choice1.png" alt="konsep1" style="width:100%">
+                    <img src="konsep/choice2.png" alt="konsep2" style="width:100%">
+                </div>
+                <div class="w3-container">
+                    <h3><b>RUTE CERITA</b></h3>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        Pemain bisa memilih arah cerita berdasarkan pilihan yang diberikan.
+                        Beberapa pilihan juga akan mempengaruhi atau tidak mempengaruhi 「Ending」 cerita.
+                        Ada juga pilihan yang membuat protagonis menjadi lebih kuat atau lemah didalam cerita yang ditandai dengan ikon 「Jam」 di pojok kiri bawah layar menu permainan.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-center">
+                <div class="w3-section">
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(-1,'gameplay')">❮</button>
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(1, 'gameplay')">❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-hide" id="minigame-display">
+        <div class="w3-content w3-display-container">
+            <div class="w3-card-4 w3-margin minigame-slide w3-animate-opacity">
+                <div class="w3-hide-small w3-hide-medium">
+                    <div class="w3-third"><img src="konsep/friend.png" alt="konsep5" style="width:100%"></div>
+                    <div class="w3-third"><img src="konsep/monster.png" alt="konsep7" style="width:100%"></div>
+                    <div class="w3-third"><img src="konsep/quest.png" alt="konsep6" style="width:100%"></div>
+                </div>
+                <div class="w3-hide-large">
+                    <img src="konsep/friend.png" alt="konsep5" style="width:100%">
+                    <img src="konsep/monster.png" alt="konsep7" style="width:100%">
+                    <img src="konsep/quest.png" alt="konsep6" style="width:100%">
+                </div>
+                <div class="w3-container">
+                    <h3><b>MEMORY</b></h3>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        Memory adalah menu untuk menyimpan informasi tentang teman, monster dan quest dengan menyelesaikan cerita utama atau memenuhi persyaratan tertentu.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-margin minigame-slide w3-animate-opacity">
+                <div class="w3-hide-small w3-hide-medium">
+                    <div class="w3-half"><img src="konsep/choice1.png" alt="konsep1" style="width:100%"></div>
+                    <div class="w3-half"><img src="konsep/choice2.png" alt="konsep2" style="width:100%"></div>
+                </div>
+                <div class="w3-hide-large">
+                    <img src="konsep/choice1.png" alt="konsep1" style="width:100%">
+                    <img src="konsep/choice2.png" alt="konsep2" style="width:100%">
+                </div>
+                <div class="w3-container">
+                    <h3><b>RUTE CERITA</b></h3>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        Pemain bisa memilih arah cerita berdasarkan pilihan yang diberikan.
+                        Beberapa pilihan juga akan mempengaruhi atau tidak mempengaruhi 「Ending」 cerita.
+                        Ada juga pilihan yang membuat protagonis menjadi lebih kuat atau lemah didalam cerita yang ditandai dengan ikon 「Jam」 di pojok kiri bawah layar menu permainan.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-center">
+                <div class="w3-section">
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(-1,'minigame')">❮</button>
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(1, 'minigame')">❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--<div class="w3-row-padding w3-margin-top">
+          <div class="w3-card-4 w3-margin">
+              <div class="w3-hide-small w3-hide-medium">
+                  <div class="w3-half"><img src="konsep/choice1.png" alt="konsep1" style="width:100%"></div>
+                  <div class="w3-half"><img src="konsep/choice2.png" alt="konsep2" style="width:100%"></div>
+              </div>
+              <div class="w3-hide-large">
+                  <img src="konsep/choice1.png" alt="konsep1" style="width:100%">
+                  <img src="konsep/choice2.png" alt="konsep2" style="width:100%">
+              </div>
+              <div class="w3-container">
+                  <h3><b>RUTE CERITA</b></h3>
+              </div>
+              <div class="w3-container">
+                  <p>
+                      Pemain bisa memilih arah cerita berdasarkan pilihan yang diberikan.
+                      Beberapa pilihan juga akan mempengaruhi atau tidak mempengaruhi 「Ending」 cerita.
+                      Ada juga pilihan yang membuat protagonis menjadi lebih kuat atau lemah didalam cerita yang ditandai dengan ikon 「Jam」 di pojok kiri bawah layar menu permainan.
+                  </p>
+              </div>
+          </div>
+          <div class="w3-card-4 w3-margin">
+              <div class="w3-hide-small w3-hide-medium">
+                  <div class="w3-half"><img src="konsep/mappie1.png" alt="konsep3" style="width:100%"></div>
+                  <div class="w3-half"><img src="konsep/mappie2.png" alt="konsep4" style="width:100%"></div>
+              </div>
+              <div class="w3-hide-large">
+                  <img src="konsep/mappie1.png" alt="konsep3" style="width:100%">
+                  <img src="konsep/mappie2.png" alt="konsep4" style="width:100%">
+              </div>
+              <div class="w3-container">
+                  <h3><b>INTERAKSI LINGKUNGAN CERITA</b></h3>
+              </div>
+              <div class="w3-container">
+                  <p>
+                      Ketika protagonis melakukan pencarian maka pemain akan diminta untuk mencari petunjuk lewat fitur 「Mappie」.
+                      Mappie digunakan untuk berinteraksi dengan karakter lain tanpa mempengaruhi cerita utama.
+                      Di fitur Mappie juga terdapat karakter/event rahasia yang hanya bisa dibuka setelah memenuhi persyaratan khusus.
+                  </p>
+              </div>
+          </div>
+          <div class="w3-card-4 w3-margin">
+              <div class="w3-hide-small w3-hide-medium">
+                  <div class="w3-third"><img src="konsep/friend.png" alt="konsep5" style="width:100%"></div>
+                  <div class="w3-third"><img src="konsep/monster.png" alt="konsep7" style="width:100%"></div>
+                  <div class="w3-third"><img src="konsep/quest.png" alt="konsep6" style="width:100%"></div>
+              </div>
+              <div class="w3-hide-large">
+                  <img src="konsep/friend.png" alt="konsep5" style="width:100%">
+                  <img src="konsep/monster.png" alt="konsep7" style="width:100%">
+                  <img src="konsep/quest.png" alt="konsep6" style="width:100%">
+              </div>
+              <div class="w3-container">
+                  <h3><b>MEMORY</b></h3>
+              </div>
+              <div class="w3-container">
+                  <p>
+                      Memory adalah menu untuk menyimpan informasi tentang teman, monster dan quest dengan menyelesaikan cerita utama atau memenuhi persyaratan tertentu.
+                  </p>
+              </div>
+          </div>
+        </div>-->
+    </div>
 
 <!-- Gallery Section -->
 <div class="w3-container " style="padding:64px 16px" id="gallery">
@@ -524,8 +674,8 @@ body, html {
 	<div class="w3-center">
 		<!-- <div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 		<div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 	</div>
 	
   </div>
@@ -548,9 +698,9 @@ body, html {
 	<div class="w3-center">
 		<!-- <div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 		<div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/NWpaJYk3er8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/NWpaJYk3er8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/5A3SYl2er2Y?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/fcX65h-rq_s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/fcX65h-rq_s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 	</div>
   </div>
 </div>
@@ -606,79 +756,10 @@ body, html {
  
 <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script> -->
 <!-- <script src="leaf.js"></script> -->
-<script>
-//chara gallery
-var charaIndex = 1;
-var slideTopIndex = 0;
+ <script src="main.js"></script> 
 
-showDivs(charaIndex);
-<!-- carousel(); -->
 
-function plusDivs(n) {
-  showDivs(charaIndex += n);
-}
 
-function currentDiv(n) {
-  showDivs(charaIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("chara-slide");
-  var dots = document.getElementsByClassName("chara-btn");
-  if (n > x.length) {charaIndex = 1}
-  if (n < 1) {charaIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[charaIndex-1].style.display = "block";
-  dots[charaIndex-1].className += " w3-opacity-off";
-}
-
-// Modal Image Gallery
-function onClick(src,modal,img) {
-  document.getElementById(img).src = src;
-  document.getElementById(modal).style.display = "block";
-  // var captionText = document.getElementById("caption");
-  // captionText.innerHTML = element.alt;
-}
-
-function carousel(){
-	var i;
-	var x = document.getElementsByClassName("slideTop");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    slideTopIndex++;
-    if (slideTopIndex > x.length) {slideTopIndex = 1}    
-    x[slideTopIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 2 seconds
-}
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 </body>
 </html>
