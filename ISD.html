@@ -1,0 +1,684 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Rewrite</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="Rewrite.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Philosopher|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=BenchNine|Source+Sans+Pro" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-top {
+    background-position: center;
+    background-size: cover;
+    background-image: url("top.png");
+    min-height: 100%;
+}
+.bgimg-story {
+    background-position: center;
+    background-size: cover;
+    background-image: url("story.png");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+.chara-slide {display:none}
+.chara-btn {cursor:pointer}
+
+.dot{
+  width:35px;
+  height:35px;
+  position:absolute;
+  background: url("leaf.png");
+  background-size: 100% 100%;
+}
+
+.w3-Roboto{
+	font-family: 'Roboto', sans-serif;
+}
+.w3-Quattrocento{
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+	/* Quattrocento &  Roboto
+	Philosopher & Roboto
+	BenchNine & Source */
+.w3-Philosopher{
+	font-family: 'Philosopher', sans-serif;
+}
+.w3-BenchNine{
+	font-family: 'BenchNine', sans-serif;
+}
+.w3-Source{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#top" class="w3-bar-item w3-button w3-wide"><img src="Rewrite_logo.png" class="w3-image" style="max-width:59px;max-height:28px"></a>
+    <!-- <a href="#top" class="w3-bar-item w3-button w3-wide"><img src="Rewrite_logo.png" class="w3-image" style="width:59px"></a> -->
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+      <a href="#story" class="w3-bar-item w3-button">SINOPSIS</a>
+      <a href="#character" class="w3-bar-item w3-button">KARAKTER</a>
+      <a href="#game" class="w3-bar-item w3-button">GAME</a>
+      <a href="#gallery" class="w3-bar-item w3-button">GALERI</a>
+      <a href="#video" class="w3-bar-item w3-button">VIDEO</a>
+      <!-- <a href="#bantuan" class="w3-bar-item w3-button">BANTUAN</a> -->
+      <a href="#tentang" class="w3-bar-item w3-button">TENTANG</a>
+    </div>
+    <!-- Right-sided navbar links -->
+    <!-- <div class="w3-right w3-hide-small"></div> -->
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large " onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"><i class="fa fa-close"></i></a>
+  <a href="#top" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
+  <a href="#story" onclick="w3_close()" class="w3-bar-item w3-button">SINOPSIS</a>
+  <a href="#character" onclick="w3_close()" class="w3-bar-item w3-button">KARAKTER</a>
+  <a href="#game" onclick="w3_close()" class="w3-bar-item w3-button">GAME</a>
+  <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">GALERI</a>
+  <a href="#video" onclick="w3_close()" class="w3-bar-item w3-button">VIDEO</a>
+  <!-- <a href="#bantuan" onclick="w3_close()" class="w3-bar-item w3-button">BANTUAN</a> -->
+  <a href="#tentang" onclick="w3_close()" class="w3-bar-item w3-button">TENTANG</a>
+</nav>
+
+<!-- Header with full-height image -->
+<!-- <header class="w3-display-container bgimg-top w3-image" id="top"> -->
+<header class="w3-display-container " id="top">
+	<img class="w3-image w3-hide-medium w3-hide-small" src="top.png" style="min-height:100%;background-position:center;background-size:cover">
+	<img class="w3-image w3-hide-large" src="top.png" style="width:100%">
+</header>
+
+<!-- Story Section -->
+<div class="bgimg-story w3-display-container " style="padding:64px 16px" id="story">
+<!-- <div class="w3-display-container " style="padding-top:64px" id="story">
+	<img class="w3-image w3-hide-medium w3-hide-small" src="story.png" style="min-height:100%;background-position:center;background-size:cover">
+	<img class="w3-image w3-hide-large" src="story.png" style="width:100%"> -->
+	<div class="w3-card-4 w3-light-grey w3-opacity w3-display-middle w3-hide-medium w3-hide-small" style="width:75%;">
+		<header class="w3-container">
+			<h3 class="w3-center w3-Quattrocento">SINOPSIS</h3>
+		</header>
+		<div class="w3-container">
+			<p class="w3-center w3-large w3-Roboto">
+				Kota penghijauan, Kazamatsuri, adalah kota eksperimen yang bergerak dalam bidang penghijauan<br>
+				Tennouji Kotarou bersama dengan Kanbe Kotori, Yoshino Haruhiko dan teman-temannya melalui kehidupan sehari-hari dengan biasa.<br>
+				Di kota Kazamatsuri yang begitu biasa, ada waktu yang sibuk terjadi setiap satu kali setahun.<br>
+				Festival Panen untuk merayakan kota Kazamatsuri. Di festival yang dilakukan besar-besaran, Kotarou bekerja paruh waktu untuk mengumpulkan bahan artikel.<br>
+				Di Kazamatsuri juga terdapat informasi makhluk hidup tidak dikenal atau gosip occultic yang membuat heboh.<br>
+				Disaat yang sama, ada sesuatu yang misterius terjadi didekat Kotarou mulai bermunculan.<br>
+				Kotarou meminta pertolongan ke ketua klub penelitian occult, Senri Akane, dan melibatkan banyak murid kedalam penyelidikan yang dilakukan olehnya.<br>
+				Bagi Kotarou, hal tersebut terasa seperti suatu petualangan.<br>
+				Selama bisa menghabiskan waktu dengan teman-temannya, itu sendiri sudah cukup.<br>
+				Kotarou masih belum tahu. Kalau hal itu mengarah menuju 「Kebenaran」 yang belum pernah diketahui oleh siapapun.<br>
+			</p>
+		</div>
+	</div>
+	<div class="w3-card-4 w3-light-grey w3-opacity w3-display-middle w3-hide-large" style="width:75%">
+		<header class="w3-container">
+			<h4 class="w3-center w3-Quattrocento">SINOPSIS</h3>
+		</header>
+		<div class="w3-container">
+			<p class="w3-center w3-small w3-Roboto">
+				Kota penghijauan, Kazamatsuri, adalah kota eksperimen yang bergerak dalam bidang penghijauan<br>
+				Tennouji Kotarou bersama dengan Kanbe Kotori, Yoshino Haruhiko dan teman-temannya melalui kehidupan sehari-hari dengan biasa.<br>
+				Di kota Kazamatsuri yang begitu biasa, ada waktu yang sibuk terjadi setiap satu kali setahun.<br>
+				Festival Panen untuk merayakan kota Kazamatsuri. Di festival yang dilakukan besar-besaran, Kotarou bekerja paruh waktu untuk mengumpulkan bahan artikel.<br>
+				Di Kazamatsuri juga terdapat informasi makhluk hidup tidak dikenal atau gosip occultic yang membuat heboh.<br>
+				Disaat yang sama, ada sesuatu yang misterius terjadi didekat Kotarou mulai bermunculan.<br>
+				Kotarou meminta pertolongan ke ketua klub penelitian occult, Senri Akane, dan melibatkan banyak murid kedalam penyelidikan yang dilakukan olehnya.<br>
+				Bagi Kotarou, hal tersebut terasa seperti suatu petualangan.<br>
+				Selama bisa menghabiskan waktu dengan teman-temannya, itu sendiri sudah cukup.<br>
+				Kotarou masih belum tahu. Kalau hal itu mengarah menuju 「Kebenaran」 yang belum pernah diketahui oleh siapapun.<br>
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- Character Section -->
+<div class="w3-container" style="padding:64px 16px" id="character">
+	<div class="w3-container w3-center w3-teal">
+		<h3>KARAKTER</h3>
+	</div>
+	<div class="w3-row-padding w3-margin-top">
+		<div class="w3-card">
+			<!-- <header class="w3-container w3-center w3-teal">
+				<h3>KARAKTER</h3>
+			</header> -->
+			<div class="w3-container">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off w3-image" src="karakter/kotarou icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(1)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/kotori icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(2)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/chihaya icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(3)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/akane icon.png" style="margin-right:0.1;width:7.5%;max-width:10%%" onclick="currentDiv(4)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/shizuku icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(5)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/lucia icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(6)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/yoshino icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(7)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/sakuya icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(8)">
+				<!-- <img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/nishikujou icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(9)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/esaka icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(10)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/midou icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(11)">
+				<img class="chara-btn w3-border w3-border-green w3-padding-small w3-opacity w3-hover-opacity-off " src="karakter/kagari icon.png" style="margin-right:0.1%;width:7.5%;max-width:10%" onclick="currentDiv(12)"> -->
+				
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Tennouji Kotarou (Morita Masakazu)</h3>
+						<!-- <h5>?V???? ???N</h5> -->
+						<!-- <h5>Morita Masakazu</h5> -->
+						<!-- <hr></hr> -->
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/kotarou.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/kotarou.png" style="width:100px">
+						
+					</header>
+					<div class="w3-container">
+						
+						<!-- <br></br>
+						<br></br> -->
+						<!-- <p>
+							Protagonis, punya sifat suka usil dan seenak hati.
+							Dia sendiri tidak sadar tapi suka perhatian dengan teman.
+							Karena punya sifat suka ikut campur, akhir-akhir ini sering terlibat kejadian misterius.
+						</p> -->
+						<p>Protagonis, punya sifat suka usil dan seenak hati.</p>
+						<p>Dia sendiri tidak sadar tapi suka perhatian dengan teman.</p>
+						<p>Karena punya sifat suka ikut campur, akhir-akhir ini sering terlibat kejadian misterius.</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Kanbe Kotori (Saitou Chiwa)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/kotori.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/kotori.png" style="width:100px">
+					</header>
+					<div class="w3-container">
+						<p>Sahabat dekat Kotarou, anak perempuan yang kecil, ceria dan seperti peliharaan kecil.</p>
+						<p>Punya bakat gardening tanaman biasa dan tanaman obat. Karena sejak dulu sering bersama dengan Kotarou, dia punya sedikit teman.</p>
+						<p>Bisa mengikuti percakapan dan mahir mengabaikan kata-kata dari Kotarou.</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Ootori Chihaya (Shinomiya Saya)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/chihaya.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/chihaya.png" style="width:100px">
+					</header>
+					<div class="w3-container">
+						<p>Gadis yang tiba-tiba pindah ke tempat sekolah Kotarou. Power figter yang kurang kenal dunia luar dan selalu hidup sendirian.</p>
+						<p>Anak yang lumayan ceroboh sehingga sering diselamatkan oleh Kotarou, tapi karena sifatnya yang sulit terus terang jadi sering bertengkar dengan Kotarou.</p>
+						<p>Dari orang lain terlihat kalau dia tertarik dengan Kotarou dan disaat yang sama juga tidak suka.</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Senri Akane (Kitamura Eri)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/akane.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/akane.png" style="width:100px">
+					</header>
+					<div class="w3-container">
+						<p>Disebut sebagai 「Penyihir Sekolah」 dan ketua klub dari klub penelitian occult. Didalam sekolah terkenal oleh sebagian murid sebagai eksistensi yang diatas peraturan.</p>
+						<p>Gadis muda yang bagian dalamnya sulit diketahui dan sering menunjukkan bagian luar serta sifat suka usilnya lebih dari Kotarou.</p>
+						<p>Karena sering membuat pernyataan yang ada maksudnya tapi kenyataannya tidak ada yang tahu.</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Nakatsu Shizuru (Suzuki Keiko)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/shizuku.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/shizuku.png" style="width:100px">
+					</header>
+					<div class="w3-container">
+						<p>Murid kelas bawah dari protagonis, anggota dari Komite Kedisiplinan. Punya sifat jarang berbicara tapi terus terang.</p>
+						<p>Gadis muda yang walaupun jarang berbicara tapi bisa tersampaikan dari tingkah laku.</p>
+						<p>Walaupun sering tidak menunjukkan aktivitas seperti Komite Kedisiplinan, tapi pernah ditunjukkan dengan alasan untuk mendapat perhatian dari Kotarou.</p>
+						<p>Tidak pernah membuka penutup mata selain ke orang terdekat. Suka ikan saury kaleng.</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Konohana Lucia (Asaki Risa)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/lucia.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/lucia.png" style="width:100px">
+					</header>
+					<div class="w3-container">
+						<p>Ketua kelas berkarisma yang namanya sering dikenal oleh sekelilingnya. Punya kebiasaan penggila kebersihan dan sulit berinteraksi dengan laki-laki.</p>
+						<p>Sering terlibat dengan aktivitas yang dilakukan oleh Kotarou, hasilnya sering memberi hukuman balasan ke Kotarou.</p>
+						<p>Suka makanan pedas (menu terpedas di kantin yang hanya bisa dimakan oleh dia).</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Yoshino Haruhiko (Yanagita Jun'ichi)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/yoshino.png" style="width:125px;height:204px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/yoshino.png" style="width:100px">
+					</header>
+					<div class="w3-container">
+						<p>Menyebut diri sendiri sebagai 「Anjing Gila」 dan seorang outlaw.</p>
+						<p>Karena sering mengatakan sesuatu yang ketinggalan jaman, sering ditertawai oleh Kotarou.</p>
+						<p>Mencintai kesendirian, berperilaku cool dan sering berkata ke Kotarou untuk menyelesaikan 「Pertengkaran」.</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Ootori Sakuya (Konishi Katsuyuki)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/sakuya.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/sakuya.png" style="width:100px">
+					</header>
+					<div class="w3-container">
+						<p>Menyebut diri sendiri sebagai 「Kakak」 dari Chihaya, tapi tidak memiliki hubungan darah, dan sering melakukan peran sebagai seorang pelayan.</p>
+						<p>Selalu bersifat baik ke wanita atau Yoshino sebagai seorang kakak tapi entah kenapa selalu bersifat dingin ke Kotarou saja.</p>
+						<p>Seorang pelayan yang memiliki kemampuan fisik dan pengetahuan yang tidak wajar serta bisa menyiapkan apapun dengan mudah. Dengan kata lain, pelayan yang tidak terkalahkan.</p>
+					</div>
+				</div>
+				<!-- <div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Kanbe Kotori (Saitou Chiwa)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/kotori.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/kotori.png" style="width:30px">
+					</header>
+					<div class="w3-container">
+						<p>Sahabat dekat Kotarou, anak perempuan yang kecil, ceria dan seperti peliharaan kecil.</p>
+						<p>Punya bakat gardening tanaman biasa dan tanaman obat. Karena sejak dulu sering bersama dengan Kotarou, dia punya sedikit teman.</p>
+						<p>Bisa mengikuti percakapan dan mahir mengabaikan kata-kata dari Kotarou.</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Kanbe Kotori (Saitou Chiwa)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/kotori.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/kotori.png" style="width:30px">
+					</header>
+					<div class="w3-container">
+						<p>Sahabat dekat Kotarou, anak perempuan yang kecil, ceria dan seperti peliharaan kecil.</p>
+						<p>Punya bakat gardening tanaman biasa dan tanaman obat. Karena sejak dulu sering bersama dengan Kotarou, dia punya sedikit teman.</p>
+						<p>Bisa mengikuti percakapan dan mahir mengabaikan kata-kata dari Kotarou.</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Kanbe Kotori (Saitou Chiwa)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/kotori.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/kotori.png" style="width:30px">
+					</header>
+					<div class="w3-container">
+						<p>Sahabat dekat Kotarou, anak perempuan yang kecil, ceria dan seperti peliharaan kecil.</p>
+						<p>Punya bakat gardening tanaman biasa dan tanaman obat. Karena sejak dulu sering bersama dengan Kotarou, dia punya sedikit teman.</p>
+						<p>Bisa mengikuti percakapan dan mahir mengabaikan kata-kata dari Kotarou.</p>
+					</div>
+				</div>
+				<div class="chara-slide w3-card-4 w3-margin-top w3-margin-bottom w3-animate-opacity" style="width:60%">
+					<header class="w3-container">
+						<h3>Kanbe Kotori (Saitou Chiwa)</h3>
+						<img class="w3-left w3-margin-right w3-hide-small" src="karakter/kotori.png" style="width:150px">
+						<img class="w3-left w3-margin-right w3-hide-large w3-hide-medium" src="karakter/kotori.png" style="width:30px">
+					</header>
+					<div class="w3-container">
+						<p>Sahabat dekat Kotarou, anak perempuan yang kecil, ceria dan seperti peliharaan kecil.</p>
+						<p>Punya bakat gardening tanaman biasa dan tanaman obat. Karena sejak dulu sering bersama dengan Kotarou, dia punya sedikit teman.</p>
+						<p>Bisa mengikuti percakapan dan mahir mengabaikan kata-kata dari Kotarou.</p>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<!-- game Section -->
+<div class="w3-container" style="padding:64px 16px" id="game">
+  <div class="w3-container w3-teal">
+	<h3 class="w3-center">GAME</h3>
+  </div>
+  <div class="w3-row-padding w3-margin-top">
+	<div class="w3-card-4 w3-margin">
+		<!-- <div class="w3-display-container w3-text-white"> -->
+		<div class="w3-hide-small w3-hide-medium">
+			<div class="w3-half"><img src="konsep/choice1.png" alt="konsep1" style="width:100%"></div>
+			<div class="w3-half"><img src="konsep/choice2.png" alt="konsep2" style="width:100%"></div>
+		</div>
+		<div class="w3-hide-large">
+			<img src="konsep/choice1.png" alt="konsep1" style="width:100%">
+			<img src="konsep/choice2.png" alt="konsep2" style="width:100%">
+		</div>
+		<!-- </div> -->
+		<div class="w3-container">
+			<h3><b>RUTE CERITA</b></h3>
+		</div>
+		<div class="w3-container">
+			<p>
+				Pemain bisa memilih arah cerita berdasarkan pilihan yang diberikan.
+				Beberapa pilihan juga akan mempengaruhi atau tidak mempengaruhi 「Ending」 cerita.
+				Ada juga pilihan yang membuat protagonis menjadi lebih kuat atau lemah didalam cerita yang ditandai dengan ikon 「Jam」 di pojok kiri bawah layar menu permainan.
+			</p>
+		</div>
+	</div>
+	<div class="w3-card-4 w3-margin">
+		<!-- <div class="w3-display-container w3-text-white"> -->
+		<div class="w3-hide-small w3-hide-medium">
+			<div class="w3-half"><img src="konsep/mappie1.png" alt="konsep3" style="width:100%"></div>
+			<div class="w3-half"><img src="konsep/mappie2.png" alt="konsep4" style="width:100%"></div>
+		</div>
+		<div class="w3-hide-large">
+			<img src="konsep/mappie1.png" alt="konsep3" style="width:100%">
+			<img src="konsep/mappie2.png" alt="konsep4" style="width:100%">
+		</div>
+		<!-- </div> -->
+		<div class="w3-container">
+			<h3><b>INTERAKSI LINGKUNGAN CERITA</b></h3>
+		</div>
+		<div class="w3-container">
+			<p>
+				Ketika protagonis melakukan pencarian maka pemain akan diminta untuk mencari petunjuk lewat fitur 「Mappie」.
+				Mappie digunakan untuk berinteraksi dengan karakter lain tanpa mempengaruhi cerita utama.
+				Di fitur Mappie juga terdapat karakter/event rahasia yang hanya bisa dibuka setelah memenuhi persyaratan khusus.
+			</p>
+		</div>
+	</div>
+	<div class="w3-card-4 w3-margin">
+		<!-- <div class="w3-display-container w3-text-white"> -->
+		<div class="w3-hide-small w3-hide-medium">
+			<div class="w3-third"><img src="konsep/friend.png" alt="konsep5" style="width:100%"></div>
+			<div class="w3-third"><img src="konsep/monster.png" alt="konsep7" style="width:100%"></div>
+			<div class="w3-third"><img src="konsep/quest.png" alt="konsep6" style="width:100%"></div>
+		</div>
+		<div class="w3-hide-large">
+			<img src="konsep/friend.png" alt="konsep5" style="width:100%">
+			<img src="konsep/monster.png" alt="konsep7" style="width:100%">
+			<img src="konsep/quest.png" alt="konsep6" style="width:100%">
+		</div>
+		<!-- </div> -->
+		<div class="w3-container">
+			<h3><b>MEMORY</b></h3>
+		</div>
+		<div class="w3-container">
+			<p>
+				Memory adalah menu untuk menyimpan informasi tentang teman, monster dan quest dengan menyelesaikan cerita utama atau memenuhi persyaratan tertentu.
+			</p>
+		</div>
+	</div>
+  </div>
+</div>
+
+<!-- Gallery Section -->
+<div class="w3-container " style="padding:64px 16px" id="gallery">
+  <div class="w3-container w3-teal">
+	<h3 class="w3-center ">GALERI</h3>
+  </div>
+  
+  <div class="w3-row-padding w3-margin-top">
+	  <div class="w3-third">
+		<div class="w3-card w3-hover-shadow" onclick="onClick('galeri/Untitled1.png','modal_galeri','img_galeri')" style="cursor:pointer">
+		  <img class="w3-hover-opacity" src="galeri/Untitled1.png" style="width:100%">
+		  <div class="w3-container">
+			<!-- <h5>1</h5> -->
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="w3-third">
+		<div class="w3-card" onclick="onClick('galeri/Untitled2.png','modal_galeri','img_galeri')" style="cursor:pointer">
+		  <img class="w3-hover-opacity" src="galeri/Untitled2.png" style="width:100%">
+		  <div class="w3-container">
+			<!-- <h5>1</h5> -->
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="w3-third">
+		<div class="w3-card" onclick="onClick('galeri/Untitled3.png','modal_galeri','img_galeri')" style="cursor:pointer">
+		  <img class="w3-hover-opacity" src="galeri/Untitled3.png" style="width:100%">
+		  <div class="w3-container">
+			<!-- <h5>1</h5> -->
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="w3-row-padding w3-margin-top">
+	  <div class="w3-third">
+		<div class="w3-card" onclick="onClick('galeri/Untitled4.png','modal_galeri','img_galeri')" style="cursor:pointer">
+		  <img class="w3-hover-opacity" src="galeri/Untitled4.png" style="width:100%">
+		  <div class="w3-container">
+			<!-- <h5>1</h5> -->
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="w3-third">
+		<div class="w3-card" onclick="onClick('galeri/Untitled5.png','modal_galeri','img_galeri')" style="cursor:pointer">
+		  <img class="w3-hover-opacity" src="galeri/Untitled5.png" style="width:100%">
+		  <div class="w3-container">
+			<!-- <h5>1</h5> -->
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="w3-third">
+		<div class="w3-card" onclick="onClick('galeri/Untitled6.png','modal_galeri','img_galeri')" style="cursor:pointer">
+		  <img class="w3-hover-opacity" src="galeri/Untitled6.png" style="width:100%">
+		  <div class="w3-container">
+			<!-- <h5>1</h5> -->
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<h3 class="w3-center">STAFF</h3>
+	<div class="w3-row">
+		<div class="w3-col s4">
+			<h4 class="w3-center">Penulis Skenario</h4>
+			<p class="w3-center">Ryuukishi07</p>
+			<p class="w3-center">Tanaka Romeo</p>
+			<p class="w3-center">Tonokawa Yuuto</p>
+		</div>
+		<div class="w3-col s4">
+			<h4 class="w3-center">Desain Karakter</h4>
+			<p class="w3-center">Hinoue Itaru</p>
+			<p class="w3-center">Ujikawa Ryou</p>
+		</div>
+		<div class="w3-col s4">
+			<h4 class="w3-center">Vokal</h4>
+			<p class="w3-center">Mizutani Runa</p>
+			<p class="w3-center">NanosizeMir</p>
+			<p class="w3-center">Psychic Lover</p>
+			<p class="w3-center">Tada Aoi</p>
+			<p class="w3-center">Yanagi Nagi</p>
+		</div>
+	</div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal_galeri" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-medium w3-black w3-text-white w3-hover-text-grey w3-display-topright" style="cursor:pointer">x</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent">
+    <img id="img_galeri" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Promotion Section -->
+<div class="w3-container" style="padding:64px 16px" id="video">
+  <div class="w3-container w3-teal">
+	<h3 class="w3-center">VIDEO</h3>
+  </div>
+  <div class="w3-row-padding w3-margin-top">
+	<!-- <div class="w3-container w3-teal"> -->
+		<h4 class="w3-center">OPENING</h4>
+	<!-- </div> -->
+	<div class="w3-center">
+		<!-- <div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+		<div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+	
+  </div>
+  <div class="w3-row-padding w3-margin-top">
+	<!-- <div class="w3-hide-small w3-hide-medium">
+		<div class="w3-third  w3-center">
+			
+		</div>
+		<div class="w3-third w3-center">
+			
+		</div>
+		<div class="w3-third w3-center">
+			
+		</div>
+	</div>
+	<div class="w3-hide-large">
+		
+	</div> -->
+	<h4 class="w3-center">TRIAL VERSION</h4>
+	<div class="w3-center">
+		<!-- <div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+		<div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/NWpaJYk3er8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/5A3SYl2er2Y?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/fcX65h-rq_s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+  </div>
+</div>
+
+<!-- kontak Section -->
+<!-- <div class="w3-container w3-light-grey" style="padding:64px 16px" id="bantuan">
+  <h3 class="w3-center">BANTUAN</h3>
+</div> -->
+
+<!-- tentang Section -->
+<div class="w3-container " style="padding:64px 16px" id="tentang">
+  <div class="w3-container w3-teal">
+	<h3 class="w3-center">TENTANG</h3>
+  </div>
+  
+  <p class="w3-center w3-large">Rewrite adalah visual novel ke 9 dari <a href="http://key.visualarts.gr.jp/">Key</a></p>
+  <p class="w3-center w3-large">Visual novel ini adalah sebuah permainan jenis visual novel dengan fitur 「Petualangan」 dan 「Simulator Cinta」.</p>
+  <p class="w3-center w3-large">Pemain bisa menjelajahi dunia dari 「Rewrite」 dengan mengikuti alur cerita secara umum dan menemui klimaks cerita berdasarkan heroine yang dipilih.</p>
+  <p class="w3-center w3-large">Pemain juga bisa menikmati mini-game melalui fitur 「Mappie」 di tengah-tengah cerita untuk berkomunikasi dengan karakter lain tanpa mempengaruhi ending atau melakukan 「Quest」 untuk mendapatkan informasi di 「Memory」.</p>
+  <br></br>
+  <h3 class="w3-center">STAFF</h3>
+  <div class="w3-row">
+	<div class="w3-col s4">
+		<h4 class="w3-center">Penulis Skenario</h4>
+		<p class="w3-center">Ryuukishi07</p>
+		<p class="w3-center">Tanaka Romeo</p>
+		<p class="w3-center">Tonokawa Yuuto</p>
+	</div>
+	<div class="w3-col s4">
+		<h4 class="w3-center">Desain Karakter</h4>
+		<p class="w3-center">Hinoue Itaru</p>
+		<p class="w3-center">Ujikawa Ryou</p>
+	</div>
+	<div class="w3-col s4">
+		<h4 class="w3-center">Vokal</h4>
+		<p class="w3-center">Mizutani Runa</p>
+		<p class="w3-center">NanosizeMir</p>
+		<p class="w3-center">Psychic Lover</p>
+		<p class="w3-center">Tada Aoi</p>
+		<p class="w3-center">Yanagi Nagi</p>
+	</div>
+  </div>
+  <!-- <br></br>
+  <h3 class="w3-center">KONTAK</h3> -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p><a href="http://key.visualarts.gr.jp/"><img src="http://key.visualarts.gr.jp/common/logo.gif"></img></a></p>
+  <p><i class="fa fa-envelope-o"></i> key-info@product.co.jp</p>
+  <p>Hak Cipta Milik Visual Art's/Key.</p>
+</footer>
+ 
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script> -->
+<!-- <script src="leaf.js"></script> -->
+<script>
+//chara gallery
+var charaIndex = 1;
+var slideTopIndex = 0;
+
+showDivs(charaIndex);
+<!-- carousel(); -->
+
+function plusDivs(n) {
+  showDivs(charaIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(charaIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("chara-slide");
+  var dots = document.getElementsByClassName("chara-btn");
+  if (n > x.length) {charaIndex = 1}
+  if (n < 1) {charaIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[charaIndex-1].style.display = "block";
+  dots[charaIndex-1].className += " w3-opacity-off";
+}
+
+// Modal Image Gallery
+function onClick(src,modal,img) {
+  document.getElementById(img).src = src;
+  document.getElementById(modal).style.display = "block";
+  // var captionText = document.getElementById("caption");
+  // captionText.innerHTML = element.alt;
+}
+
+function carousel(){
+	var i;
+	var x = document.getElementsByClassName("slideTop");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    slideTopIndex++;
+    if (slideTopIndex > x.length) {slideTopIndex = 1}    
+    x[slideTopIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
