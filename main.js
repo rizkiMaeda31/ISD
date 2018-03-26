@@ -34,8 +34,8 @@ function currentDiv(n, mode) {
     else if (mode == "skenario") {
         temp = document.getElementById("gameplay-display");
         temp.className = temp.className.replace("w3-show", "w3-hide");
-        temp = document.getElementById("minigame-display");
-        temp.className = temp.className.replace("w3-show", "w3-hide");
+        //temp = document.getElementById("minigame-display");
+        //temp.className = temp.className.replace("w3-show", "w3-hide");
         temp = document.getElementById("skenario-display");
         temp.className = temp.className.replace("w3-hide", "w3-show");
         showDivs(skenarioIndex = n, mode);
@@ -43,8 +43,8 @@ function currentDiv(n, mode) {
     else if (mode == "gameplay") {
         temp = document.getElementById("skenario-display");
         temp.className = temp.className.replace("w3-show", "w3-hide");
-        temp = document.getElementById("minigame-display");
-        temp.className = temp.className.replace("w3-show", "w3-hide");
+        //temp = document.getElementById("minigame-display");
+        //temp.className = temp.className.replace("w3-show", "w3-hide");
         temp = document.getElementById("gameplay-display");
         temp.className = temp.className.replace("w3-hide", "w3-show");
         showDivs(gameplayIndex = n, mode);
@@ -143,3 +143,19 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+$('div.mainnav a').click(function (event) {
+    event.preventDefault();
+    var link = this;
+    $.smoothScroll({
+        scrollTarget: link.hash
+    });
+});
+
+$('nav.mainnav a').click(function (event) {
+    event.preventDefault();
+    var link = this;
+    $.smoothScroll({
+        scrollTarget: link.hash
+    });
+});

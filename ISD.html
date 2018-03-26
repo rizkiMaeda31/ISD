@@ -16,6 +16,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
     height: 100%;
     line-height: 1.8;
+    cursor: url(http://ani.cursors-4u.net/others/oth-9/oth911.cur), auto !important;
 }
 /* Full height image header */
 .bgimg-top {
@@ -29,6 +30,7 @@ body, html {
     background-size: cover;
     background-image: url("story.png");
     min-height: 100%;
+    
 }
 .w3-bar .w3-button {
     padding: 16px;
@@ -67,31 +69,31 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#top" class="w3-bar-item w3-button w3-wide"><img src="Rewrite_logo.png" class="w3-image" style="max-width:59px;max-height:28px"></a>
-    <!-- <a href="#top" class="w3-bar-item w3-button w3-wide"><img src="Rewrite_logo.png" class="w3-image" style="width:59px"></a> -->
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small w3-hide-medium">
-      <a href="#story" class="w3-bar-item w3-button">SINOPSIS</a>
-      <a href="#character" class="w3-bar-item w3-button">KARAKTER</a>
-      <a href="#game" class="w3-bar-item w3-button">GAME</a>
-      <a href="#gallery" class="w3-bar-item w3-button">GALERI</a>
-      <a href="#video" class="w3-bar-item w3-button">VIDEO</a>
-      <!-- <a href="#bantuan" class="w3-bar-item w3-button">BANTUAN</a> -->
-      <a href="#tentang" class="w3-bar-item w3-button">TENTANG</a>
+  <div class="w3-bar w3-white w3-card mainnav" id="myNavbar">
+       <a href="#top" class="w3-bar-item w3-button w3-wide"><img src="Rewrite_logo.png" class="w3-image" style="max-width:59px;max-height:28px"></a> 
+          <!-- <a href="#top" class="w3-bar-item w3-button w3-wide"><img src="Rewrite_logo.png" class="w3-image" style="width:59px"></a> -->
+  <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-hide-medium mainnav">
+        <a href="#story" class="w3-bar-item w3-button">SINOPSIS</a>
+        <a href="#character" class="w3-bar-item w3-button">KARAKTER</a>
+        <a href="#game" class="w3-bar-item w3-button">GAME</a>
+        <a href="#gallery" class="w3-bar-item w3-button">GALERI</a>
+        <a href="#video" class="w3-bar-item w3-button">VIDEO</a>
+        <!-- <a href="#bantuan" class="w3-bar-item w3-button">BANTUAN</a> -->
+        <a href="#tentang" class="w3-bar-item w3-button">TENTANG</a>
     </div>
     <!-- Right-sided navbar links -->
     <!-- <div class="w3-right w3-hide-small"></div> -->
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large " onclick="w3_open()">
-      <i class="fa fa-bars"></i>
+        <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large mainnav" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"><i class="fa fa-close"></i></a>
   <a href="#top" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
   <a href="#story" onclick="w3_close()" class="w3-bar-item w3-button">SINOPSIS</a>
@@ -106,16 +108,17 @@ body, html {
 <!-- Header with full-height image -->
 <!-- <header class="w3-display-container bgimg-top w3-image" id="top"> -->
 <header class="w3-display-container " id="top">
-	<img class="w3-image w3-hide-medium w3-hide-small" src="top.png" style="min-height:100%;background-position:center;background-size:cover">
-	<img class="w3-image w3-hide-large" src="top.png" style="width:100%">
+	<img class="w3-image w3-hide-medium w3-hide-small" src="top1.png" style="min-height:100%;background-position:center;background-size:cover">
+    <img class="w3-image w3-display-bottommiddle"src="top2.gif" />
+	<img class="w3-image w3-hide-large" src="top1.png" style="width:100%">
 </header>
 
 <!-- Story Section -->
-<div class="bgimg-story w3-display-container " style="padding:64px 16px" id="story">
-<!-- <div class="w3-display-container " style="padding-top:64px" id="story">
-	<img class="w3-image w3-hide-medium w3-hide-small" src="story.png" style="min-height:100%;background-position:center;background-size:cover">
-	<img class="w3-image w3-hide-large" src="story.png" style="width:100%"> -->
-	<div class="w3-card-4 w3-light-grey w3-opacity w3-display-middle w3-hide-medium w3-hide-small" style="width:75%;">
+<div class="bgimg-story w3-display-container" style="padding:64px 16px" id="story">
+ <!--<div class="w3-display-container " style="padding-top:64px" id="story">
+	<img class="w3-image w3-hide-medium w3-hide-small w3-grayscale-max" src="story.png" style="min-height:100%;background-position:center;background-size:cover">
+	<img class="w3-image w3-hide-large" src="story.png" style="width:100%">--> 
+	<div class="w3-card-4 w3-light-grey w3-display-middle w3-hide-medium w3-hide-small" style="width:75%;">
 		<header class="w3-container">
 			<h3 class="w3-center w3-Quattrocento">SINOPSIS</h3>
 		</header>
@@ -134,7 +137,7 @@ body, html {
 			</p>
 		</div>
 	</div>
-	<div class="w3-card-4 w3-light-grey w3-opacity w3-display-middle w3-hide-large" style="width:75%">
+	<div class="w3-card-4 w3-light-grey w3-display-middle w3-hide-large" style="width:75%">
 		<header class="w3-container">
 			<h4 class="w3-center w3-Quattrocento">SINOPSIS</h3>
 		</header>
@@ -350,47 +353,64 @@ body, html {
     <div class="w3-bar w3-row-padding w3-margin w3-center">
         <button class="w3-button w3-black" onclick="currentDiv(1,'skenario')">SKENARIO</button>
         <button class="w3-button w3-teal" onclick="currentDiv(1,'gameplay')">GAMEPLAY</button>
-        <button class="w3-button w3-red" onclick="currentDiv(1,'minigame')">MINI GAME</button>
+        <!--<button class="w3-button w3-red" onclick="currentDiv(1,'minigame')">MINI GAME</button>-->
     </div>
     <div class="w3-show" id="skenario-display">
         <div class="w3-content w3-display-container ">
             <div class="w3-card-4 w3-margin skenario-slide w3-animate-opacity">
                 <div class="w3-hide-small w3-hide-medium">
-                    <div class="w3-half"><img src="konsep/choice1.png" alt="konsep1" style="width:100%"></div>
-                    <div class="w3-half"><img src="konsep/choice2.png" alt="konsep2" style="width:100%"></div>
+                    <div class=""><img src="konsep/Untitled8.png" alt="konsep1" style="width:100%"></div>
                 </div>
                 <div class="w3-hide-large">
-                    <img src="konsep/choice1.png" alt="konsep1" style="width:100%">
-                    <img src="konsep/choice2.png" alt="konsep2" style="width:100%">
-                </div>
-                <div class="w3-container">
-                    <h3><b>RUTE CERITA</b></h3>
+                    
                 </div>
                 <div class="w3-container">
                     <p>
-                        Pemain bisa memilih arah cerita berdasarkan pilihan yang diberikan.
-                        Beberapa pilihan juga akan mempengaruhi atau tidak mempengaruhi 「Ending」 cerita.
-                        Ada juga pilihan yang membuat protagonis menjadi lebih kuat atau lemah didalam cerita yang ditandai dengan ikon 「Jam」 di pojok kiri bawah layar menu permainan.
+                        Rewrite adalah sebuah game yang bertema kehidupan SMA dimana pemain akan menggunakan karakter bernama Tennouji Kotarou.
                     </p>
                 </div>
             </div>
             <div class="w3-card-4 w3-margin skenario-slide w3-animate-opacity">
                 <div class="w3-hide-small w3-hide-medium">
-                    <div class="w3-half"><img src="konsep/mappie1.png" alt="konsep3" style="width:100%"></div>
-                    <div class="w3-half"><img src="konsep/mappie2.png" alt="konsep4" style="width:100%"></div>
+                    <div class="w3-half"><img src="konsep/Untitled9.png" alt="konsep1" style="width:100%"></div>
+                    <div class="w3-half"><img src="https://s.vndb.org/sf/42/33642.jpg" style="width:100%"/></div>
                 </div>
                 <div class="w3-hide-large">
-                    <img src="konsep/mappie1.png" alt="konsep3" style="width:100%">
-                    <img src="konsep/mappie2.png" alt="konsep4" style="width:100%">
-                </div>
-                <div class="w3-container">
-                    <h3><b>INTERAKSI LINGKUNGAN CERITA</b></h3>
+                    <img src="konsep/Untitled9.png" alt="konsep1" style="width:100%">
+                    <img src="https://s.vndb.org/sf/42/33642.jpg" style="width:100%" />
                 </div>
                 <div class="w3-container">
                     <p>
-                        Ketika protagonis melakukan pencarian maka pemain akan diminta untuk mencari petunjuk lewat fitur 「Mappie」.
-                        Mappie digunakan untuk berinteraksi dengan karakter lain tanpa mempengaruhi cerita utama.
-                        Di fitur Mappie juga terdapat karakter/event rahasia yang hanya bisa dibuka setelah memenuhi persyaratan khusus.
+                        Didalam cerita, pemain akan berinteraksi dengan karakter lain dalam kehidupan sehari-hari.
+                        Interaksi ini diperlukan untuk mengenal karakter lain termasuk karakter yang dimainkan.
+                        Selain itu, interaksi dengan karakter lain bisa memberikan petunjuk bagaimana cara menyelesaikan game ini.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-margin skenario-slide w3-animate-opacity">
+                <div class="w3-hide-small w3-hide-medium">
+                    <div class=""><img src="konsep/Untitled10.png" alt="konsep1" style="width:100%"></div>
+                </div>
+                <div class="w3-hide-large">
+                    <div class=""><img src="konsep/Untitled10.png" alt="konsep1" style="width:100%"></div>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        Terkadang pemain akan diminta oleh karakter lain untuk melakukan sesuatu yaitu 「Quest」 yang ditandai dengan munculnya gambar smartphone seperti gambar diatas.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-margin skenario-slide w3-animate-opacity">
+                <div class="w3-hide-small w3-hide-medium">
+                    <div class=""><img src="konsep/Untitled13.png" alt="konsep1" style="width:100%"></div>
+                </div>
+                <div class="w3-hide-large">
+                    <div class=""><img src="konsep/Untitled13.png" alt="konsep1" style="width:100%"></div>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        Ketika pemain sudah melakukan interaksi yang diperlukan dan memilih 「percabangan」 yang benar,
+                        maka di sisi kiri bawah layar dimana terdapat gambar jam akan berubah warna menjadi ungu yang akan menjadi penanda bahwa 「ending」 sudah dekat.
                     </p>
                 </div>
             </div>
@@ -406,7 +426,30 @@ body, html {
         <div class="w3-content w3-display-container">
             <div class="w3-card-4 w3-margin gameplay-slide w3-animate-opacity">
                 <div class="w3-hide-small w3-hide-medium">
+                    <div class="w3-half"><img src="konsep/choice1.png" alt="konsep1" style="width:100%"></div>
+                    <div class="w3-half"><img src="konsep/choice2.png" alt="konsep2" style="width:100%"></div>
+
+                </div>
+                <div class="w3-hide-large">
+                    <img src="konsep/choice1.png" alt="konsep1" style="width:100%">
+                    <img src="konsep/choice2.png" alt="konsep2" style="width:100%">
+                </div>
+                <div class="w3-container">
+                    <h3><b>RUTE CERITA</b></h3>
+                </div>
+                <div class="w3-container">
+                    <p>
+                        Pemain bisa memilih arah cerita berdasarkan pilihan yang diberikan.
+                        Beberapa pilihan juga akan mempengaruhi atau tidak mempengaruhi 「Ending」 cerita.
+                        Ada juga pilihan yang membuat protagonis menjadi lebih kuat atau lemah didalam cerita yang ditandai dengan ikon 「Jam」 di pojok kiri bawah layar menu permainan.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-margin gameplay-slide w3-animate-opacity">
+                <div class="w3-hide-small w3-hide-medium">
+
                     <div class="w3-half"><img src="konsep/mappie1.png" alt="konsep3" style="width:100%"></div>
+
                     <div class="w3-half"><img src="konsep/mappie2.png" alt="konsep4" style="width:100%"></div>
                 </div>
                 <div class="w3-hide-large">
@@ -426,21 +469,19 @@ body, html {
             </div>
             <div class="w3-card-4 w3-margin gameplay-slide w3-animate-opacity">
                 <div class="w3-hide-small w3-hide-medium">
-                    <div class="w3-half"><img src="konsep/choice1.png" alt="konsep1" style="width:100%"></div>
-                    <div class="w3-half"><img src="konsep/choice2.png" alt="konsep2" style="width:100%"></div>
+                    <div class="w3-half"><img src="konsep/Untitled11.png" alt="konsep3" style="width:100%"></div>
+                    <div class="w3-half"><img src="konsep/Untitled12.png" alt="konsep4" style="width:100%"></div>
                 </div>
                 <div class="w3-hide-large">
-                    <img src="konsep/choice1.png" alt="konsep1" style="width:100%">
-                    <img src="konsep/choice2.png" alt="konsep2" style="width:100%">
+                    <img src="konsep/Untitled11.png" alt="konsep3" style="width:100%">
+                    <img src="konsep/Untitled12.png" alt="konsep4" style="width:100%">
                 </div>
                 <div class="w3-container">
-                    <h3><b>RUTE CERITA</b></h3>
+                    <h3><b>BAD END</b></h3>
                 </div>
                 <div class="w3-container">
                     <p>
-                        Pemain bisa memilih arah cerita berdasarkan pilihan yang diberikan.
-                        Beberapa pilihan juga akan mempengaruhi atau tidak mempengaruhi 「Ending」 cerita.
-                        Ada juga pilihan yang membuat protagonis menjadi lebih kuat atau lemah didalam cerita yang ditandai dengan ikon 「Jam」 di pojok kiri bawah layar menu permainan.
+                        Bad end adalah ending yang didapatkan oleh pemain karena tidak memenuhi kriteria untuk memasuki rute heroine atau salah memilih percabangan yang bisa menyebabkan bad end langsung.
                     </p>
                 </div>
             </div>
@@ -452,7 +493,7 @@ body, html {
             </div>
         </div>
     </div>
-    <div class="w3-hide" id="minigame-display">
+    <!--<div class="w3-hide" id="minigame-display">
         <div class="w3-content w3-display-container">
             <div class="w3-card-4 w3-margin minigame-slide w3-animate-opacity">
                 <div class="w3-hide-small w3-hide-medium">
@@ -501,7 +542,7 @@ body, html {
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
         <!--<div class="w3-row-padding w3-margin-top">
           <div class="w3-card-4 w3-margin">
               <div class="w3-hide-small w3-hide-medium">
@@ -599,7 +640,7 @@ body, html {
 		<div class="w3-card w3-hover-shadow" onclick="onClick('galeri/Untitled1.png','modal_galeri','img_galeri')" style="cursor:pointer">
 		  <img class="w3-hover-opacity" src="galeri/Untitled1.png" style="width:100%">
 		  <div class="w3-container">
-			<!-- <h5>1</h5> -->
+			 <h5 class="w3-center">Pencarian Kotori</h5> 
 		  </div>
 		</div>
 	  </div>
@@ -608,7 +649,7 @@ body, html {
 		<div class="w3-card" onclick="onClick('galeri/Untitled2.png','modal_galeri','img_galeri')" style="cursor:pointer">
 		  <img class="w3-hover-opacity" src="galeri/Untitled2.png" style="width:100%">
 		  <div class="w3-container">
-			<!-- <h5>1</h5> -->
+			 <h5 class="w3-center">Penemuan sungai 7 warna</h5> 
 		  </div>
 		</div>
 	  </div>
@@ -617,7 +658,7 @@ body, html {
 		<div class="w3-card" onclick="onClick('galeri/Untitled3.png','modal_galeri','img_galeri')" style="cursor:pointer">
 		  <img class="w3-hover-opacity" src="galeri/Untitled3.png" style="width:100%">
 		  <div class="w3-container">
-			<!-- <h5>1</h5> -->
+			 <h5 class="w3-center">Janji dengan Chihaya</h5> 
 		  </div>
 		</div>
 	  </div>
@@ -628,7 +669,7 @@ body, html {
 		<div class="w3-card" onclick="onClick('galeri/Untitled4.png','modal_galeri','img_galeri')" style="cursor:pointer">
 		  <img class="w3-hover-opacity" src="galeri/Untitled4.png" style="width:100%">
 		  <div class="w3-container">
-			<!-- <h5>1</h5> -->
+			 <h5 class="w3-center">Akane dan anggota Martel</h5> 
 		  </div>
 		</div>
 	  </div>
@@ -637,7 +678,7 @@ body, html {
 		<div class="w3-card" onclick="onClick('galeri/Untitled5.png','modal_galeri','img_galeri')" style="cursor:pointer">
 		  <img class="w3-hover-opacity" src="galeri/Untitled5.png" style="width:100%">
 		  <div class="w3-container">
-			<!-- <h5>1</h5> -->
+			 <h5 class="w3-center">Diskusi dengan Esaka</h5> 
 		  </div>
 		</div>
 	  </div>
@@ -646,7 +687,7 @@ body, html {
 		<div class="w3-card" onclick="onClick('galeri/Untitled6.png','modal_galeri','img_galeri')" style="cursor:pointer">
 		  <img class="w3-hover-opacity" src="galeri/Untitled6.png" style="width:100%">
 		  <div class="w3-container">
-			<!-- <h5>1</h5> -->
+			 <h5 class="w3-center">Kerja bakti di rumah Chihaya bersama dengan anggota Occult Club</h5> 
 		  </div>
 		</div>
 	  </div>
@@ -673,8 +714,14 @@ body, html {
 		<h4 class="w3-center">OPENING</h4>
 	<!-- </div> -->
 	<div class="w3-center">
-		<!-- <div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-		<div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
+		 <div class="w3-half w3-center">
+            <iframe width="75%" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             <h5>Rewrite Opening Versi Game</h5>
+         </div>
+		<div class="w3-half w3-center">
+            <iframe width="75%" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h5>Rewrite Opening Versi Anime</h5>
+        </div> 
 		<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 	</div>
@@ -697,11 +744,20 @@ body, html {
 	</div> -->
 	<h4 class="w3-center">TRIAL VERSION</h4>
 	<div class="w3-center">
-		<!-- <div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-		<div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
-		<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/NWpaJYk3er8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/5A3SYl2er2Y?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/fcX65h-rq_s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+		 <!--<div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/Ne-4_Bz0wAg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+		<div class="w3-half w3-center"><iframe width="75%" height="315" src="https://www.youtube.com/embed/yegE5ai9abQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>--> 
+        <div class="w3-half w3-center">
+            <iframe width="75%" height="315" src="https://www.youtube.com/embed/NWpaJYk3er8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Trial part 1</p>
+        </div>
+        <div class="w3-half w3-center">
+            <iframe width="75%" height="315" src="https://www.youtube.com/embed/5A3SYl2er2Y?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Trial part 2</p>
+        </div>
+        <!--<div class="w3-half w3-center">
+            <iframe width="75%" height="315" src="https://www.youtube.com/embed/fcX65h-rq_s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>Trial part 3</p>
+        </div>-->
 	</div>
   </div>
 </div>
@@ -757,8 +813,10 @@ body, html {
  
 <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script> -->
 <!-- <script src="leaf.js"></script> -->
- <script src="main.js"></script> 
-
+<script src='https://kswedberg.github.io/jquery-smooth-scroll/lib/jquery/jquery.js'></script>
+<script src="smoothScroll.js"></script>
+<!--<script src='https://kswedberg.github.io/jquery-smooth-scroll/lib/jquery.ba-bbq.js'></script>-->
+<script src="main.js"></script> 
 
 
 
